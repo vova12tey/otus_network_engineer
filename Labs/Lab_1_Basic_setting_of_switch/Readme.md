@@ -18,8 +18,9 @@ service password-encryption
 enable secret class
 banner motd #
 Unauthorized access is strictly prohibited. #
-Назначил IP-адрес интерфейсу SVI на коммутаторе S1,также огранчил доступ с помощью пароля пароль
+Назначил IP-адрес интерфейсу SVI на коммутаторе S1,также ограничил доступ с помощью пароля пароль
 ![alt text](image-1.png)
+
 ![](Labs\Lab_1_Basic_setting_of_switch\setting_ip_S1.png)
 Назначил IP-адрес на компьютере PC1 через IP configuration
 ![alt text](image-2.png)
