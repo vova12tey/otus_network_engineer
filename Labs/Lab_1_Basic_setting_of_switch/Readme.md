@@ -7,7 +7,6 @@
 
 1. Создал сеть сеть согласно топологии
 ![alt text](image.png)
-![Basic topology](Labs\Lab_1_Basic_setting_of_switch\basic_topology.png)
 Проверил настройки коммутатора по умолчанию с помощью команды show running-config 
 Labs\Lab_1_Basic_setting_of_switch\S1_startup-configs
 
