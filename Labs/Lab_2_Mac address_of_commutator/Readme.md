@@ -9,7 +9,8 @@
 ### Решение:
 Часть 1. Создание и настройка сети
  Шаг 1. Подключил сеть в соответствии с топологией.
-<img width="850" height="1033" alt="Screenshot_173" src="https://github.com/user-attachments/assets/9bcbcc18-d66e-44d6-abcd-d934a1d3ea94" />
+<img width="851" height="1033" alt="Screenshot_175" src="https://github.com/user-attachments/assets/1668597c-5982-4836-bf27-54aac9b93fd6" />
+
 
  Шаг 2. Настройте узлы ПК.
  
