@@ -11,7 +11,7 @@
  Шаг 1. Подключил сеть в соответствии с топологией.
 <img width="960" height="1033" alt="Screenshot_191" src="https://github.com/user-attachments/assets/44ea1a15-5acb-4d3e-9a02-04542f4b339a" />
 
- Шаг 2. Настроил узлы ПК.
+Шаг 2. Настроил узлы ПК.
 <img width="801" height="624" alt="Screenshot_192" src="https://github.com/user-attachments/assets/b722bd57-dcb1-460e-a45a-26151eacc5ca" />
 <img width="802" height="628" alt="Screenshot_193" src="https://github.com/user-attachments/assets/97a0ddae-7840-4dda-97e2-cf2d14da5f7f" />
 
