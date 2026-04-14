@@ -31,6 +31,7 @@
  Шаг 3. Очистил таблицу МАС-адресов коммутатора S2 и снова отобразил таблицу МАС-адресов.
 <img width="803" height="1031" alt="Screenshot_212" src="https://github.com/user-attachments/assets/aa2e4dd6-3fe8-4606-82b3-3f42c76053de" />
 <img width="795" height="1028" alt="Screenshot_213" src="https://github.com/user-attachments/assets/b33eb920-c45d-45fe-824e-f1949af1f636" />
+
 Подождал 10 секунд после чего таблица MAC-адресов снова отобразилась.
 
 Шаг 4. С компьютера PC-B отправил эхо-запросы устройствам в сети и просмотрел таблицу МАС-адресов коммутатора.
