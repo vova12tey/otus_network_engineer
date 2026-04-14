@@ -34,5 +34,6 @@
 <img width="799" height="1033" alt="Screenshot_207" src="https://github.com/user-attachments/assets/1c7e5cf4-50ea-405a-8400-07fcde638e02" />
 <img width="795" height="1028" alt="Screenshot_214" src="https://github.com/user-attachments/assets/f54b05d7-40c3-48e1-8116-ba503d496696" />
 <img width="790" height="1031" alt="Screenshot_215" src="https://github.com/user-attachments/assets/b26813d5-944b-4e9f-b49d-4ff98aaea53a" />
+
 Эхо-запросы были отправлены с PC-B на компьютер PC-A, а также коммутаторы S1 и S2 и были получены ответы от всех устройств.
 
