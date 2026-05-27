@@ -70,6 +70,18 @@ b.	Задайте домен для устройства
 
 <img width="694" height="1029" alt="Screenshot_246" src="https://github.com/user-attachments/assets/a052f1b4-9d1b-4244-a575-53ce9faac75d" />
 
+Шаг 2. Создайте ключ шифрования с указанием его длины.
+
+<img width="696" height="1031" alt="Screenshot_247" src="https://github.com/user-attachments/assets/3629e958-a860-4635-8509-bb5baefbe791" />
+
+
+Шаг 3. Создайте имя пользователя в локальной базе учетных записей.
+Настроил имя пользователя, используя admin в качестве имени пользователя и Adm1nP @55 в качестве пароля.
+
+<img width="560" height="1031" alt="Screenshot_248" src="https://github.com/user-attachments/assets/71b2332b-ee2a-44be-87ae-ff7bb28b1f14" />
+
+
+
 
 
 Часть 3. Настройка коммутатора для доступа по протоколу SSH
