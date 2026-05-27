@@ -30,6 +30,7 @@ i.	Настроил и активировал на маршрутизаторе 
 j.	Сохранил текущую конфигурацию в файл загрузочной конфигурации.
 
 Все шаги выше в скриншотах
+
 <img width="700" height="1029" alt="Screenshot_240" src="https://github.com/user-attachments/assets/3e3b2c93-38ca-4393-9b10-b35ed37d77d6" />
 
 <img width="697" height="857" alt="Screenshot_241" src="https://github.com/user-attachments/assets/4db0037f-82a9-4140-9497-2f6bb58ce8c7" />
