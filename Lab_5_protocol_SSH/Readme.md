@@ -67,6 +67,7 @@ b.	Настройте для PC-A шлюз по умолчанию.
 a.	Задайте имя устройства.
 
 b.	Задайте домен для устройства
+
 <img width="694" height="1029" alt="Screenshot_246" src="https://github.com/user-attachments/assets/a052f1b4-9d1b-4244-a575-53ce9faac75d" />
 
 
