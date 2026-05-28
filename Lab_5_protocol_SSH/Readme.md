@@ -35,9 +35,12 @@ j.	Сохранил текущую конфигурацию в файл загр
 
 <img width="700" height="1029" alt="Screenshot_240" src="https://github.com/user-attachments/assets/3e3b2c93-38ca-4393-9b10-b35ed37d77d6" />
 
+
 <img width="697" height="857" alt="Screenshot_241" src="https://github.com/user-attachments/assets/4db0037f-82a9-4140-9497-2f6bb58ce8c7" />
 
+
 <img width="700" height="871" alt="Screenshot_242" src="https://github.com/user-attachments/assets/39a2bd04-d186-4181-9725-906bdefe2248" />
+
 
 Шаг 4. Настройте компьютер PC-A.
 
@@ -79,6 +82,7 @@ b.	Задайте домен для устройства
 Настроил имя пользователя, используя admin в качестве имени пользователя и Adm1nP @55 в качестве пароля.
 
 <img width="560" height="1031" alt="Screenshot_248" src="https://github.com/user-attachments/assets/71b2332b-ee2a-44be-87ae-ff7bb28b1f14" />
+
 
 <img width="696" height="1032" alt="Screenshot_249" src="https://github.com/user-attachments/assets/0e7a9e3c-b19b-43dc-bb0c-3cefdcb377da" />
 
