@@ -9,6 +9,7 @@
 
 <img width="928" height="1027" alt="Screenshot_77" src="https://github.com/user-attachments/assets/c2e70f47-83fa-4cd8-8f8d-676d816ed252" />
 
+
 <img width="867" height="1029" alt="Screenshot_59" src="https://github.com/user-attachments/assets/7166ffb9-3d82-44e1-95d0-f603b824a569" />
 
 
@@ -18,6 +19,7 @@
 На R2 интерфейсу G0/0/1 был назначен адрес 10.53.0.2/24, а интерфейсу Loopback 1 — 192.168.1.1/24. Все физические интерфейсы были включены.
 
 <img width="876" height="1026" alt="Screenshot_60" src="https://github.com/user-attachments/assets/e1f056c9-33e8-4a9a-964f-f63a2463d60e" />
+
 
 <img width="877" height="1023" alt="Screenshot_61" src="https://github.com/user-attachments/assets/67e3a311-72da-4624-a745-0cbff722cc80" />
 
@@ -29,11 +31,15 @@
 
 <img width="873" height="1026" alt="Screenshot_62" src="https://github.com/user-attachments/assets/7cab1ff7-b756-4e01-96a3-1423bef50572" />
 
+
 <img width="873" height="1025" alt="Screenshot_63" src="https://github.com/user-attachments/assets/72b2ffaa-ab9a-44b9-ac4d-28313fec29d3" />
+
 
 <img width="873" height="1026" alt="Screenshot_64" src="https://github.com/user-attachments/assets/aaa45ac1-1b62-4653-abb2-b169a20fe28e" />
 
+
 <img width="877" height="1029" alt="Screenshot_68" src="https://github.com/user-attachments/assets/4b0c41e4-8ffb-449b-a92a-85d207e8d91c" />
+
 
 <img width="874" height="1027" alt="Screenshot_69" src="https://github.com/user-attachments/assets/66fd235c-d8b8-4124-a42d-d8f6c60738df" />
 
@@ -44,10 +50,20 @@
 На обоих маршрутизаторах был запущен процесс OSPF с идентификатором процесса 56. Вручную были заданы идентификаторы маршрутизаторов (Router ID): для R1 — 1.1.1.1, для R2 — 2.2.2.2.
 Сеть 10.53.0.0/24, соединяющая маршрутизаторы, была анонсирована в область 0 на обоих устройствах. Дополнительно на R2 в ту же область была анонсирована сеть петлевого интерфейса 192.168.1.1 с использованием точной обратной маски.
 
+<img width="875" height="1024" alt="Screenshot_65" src="https://github.com/user-attachments/assets/bfb6fbba-0579-490c-ad32-c31368c54456" />
+
+
+<img width="869" height="1022" alt="Screenshot_66" src="https://github.com/user-attachments/assets/da243bb3-118c-4cf1-bb1b-5fdef8c3a542" />
+
+
 Шаг 2. Проверка базовой работы OSPF и устранение неполадок
 
 Первоначально соседство между маршрутизаторами не установилось. В ходе диагностики на R1 команда show ip ospf neighbor не показывала соседей, а интерфейс G0/0/1 находился в состоянии DR с нулевым количеством соседей.
 Исправление: Причиной отсутствия OSPF-соседства была неполадка уровня L2 — порт F0/1 на S1 был отключён. После его включения и восстановления связи между коммутаторами, через несколько секунд на R1 установилось соседство с R2 (состояние FULL/DR), а в таблице маршрутизации появился маршрут до сети 192.168.1.1/24 через 10.53.0.2. Пинг с R1 до интерфейса Loopback 1 R2 прошёл успешно.
+
+<img width="875" height="1028" alt="Screenshot_67" src="https://github.com/user-attachments/assets/55cc14e7-2198-4117-b9bc-e2dcd0dbfa53" />
+
+
 
 Часть 3. Оптимизация и проверка конфигурации OSPFv2 для одной области
 Шаг 1. Реализация различных оптимизаций
@@ -68,6 +84,13 @@
 
 Изменение пропускной способности интерфейсов: На интерфейсах G0/0/1 обоих маршрутизаторов была изменена пропускная способность (установлена на 1000 кбит/с). Это изменило расчёт стоимости (Cost) OSPF для маршрутов, проходящих через данный канал. Для применения новых метрик процесс OSPF был перезапущен.
 
+<img width="874" height="1025" alt="Screenshot_72" src="https://github.com/user-attachments/assets/935db425-1e66-4a5f-b439-32f9d6f38d84" />
+
+<img width="876" height="1033" alt="Screenshot_73" src="https://github.com/user-attachments/assets/74591b59-1c4d-47fd-92a7-253df40ad8e6" />
+
+<img width="879" height="1032" alt="Screenshot_74" src="https://github.com/user-attachments/assets/d40355cc-c78b-408f-80dc-f4c53eeca3cc" />
+
+
 Шаг 2. Проверка оптимизации
 
 После выполнения всех оптимизаций были проведены проверки:
@@ -79,6 +102,12 @@
 На R2 в таблице маршрутизации появился маршрут по умолчанию O*E2 0.0.0.0/0, анонсированный через OSPF от R1. Маршрут к петлевой сети R1 (172.16.1.0/24) отображался с маской /24.
 
 Финальный эхо-запрос с R2 до петлевого интерфейса R1 (172.16.1.1) прошёл успешно со 100% успехом, что подтвердило корректную работу всех настроенных механизмов оптимизации.
+
+<img width="881" height="1028" alt="Screenshot_75" src="https://github.com/user-attachments/assets/ae4a8064-e337-4609-a3c3-f8fc3111793c" />
+
+
+<img width="866" height="1024" alt="Screenshot_76" src="https://github.com/user-attachments/assets/bd8cf19c-2dec-4090-8e18-b8a1fdf061c2" />
+
 
 Ответы на вопросы лабораторной работы:
 1. Какой маршрутизатор является DR? Какой является BDR? Каковы критерии отбора?
