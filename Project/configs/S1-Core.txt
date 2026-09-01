@@ -1,0 +1,124 @@
+
+S1-Core#show running-config
+Building configuration...
+
+Current configuration : 2164 bytes
+!
+version 15.0
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+!
+hostname S1-Core
+!
+enable secret 5 $1$mERr$9cTjUIEqNGurQiFU.ZeCi1
+!
+!
+!
+no ip domain-lookup
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface FastEthernet0/1
+ switchport trunk native vlan 1000
+ switchport trunk allowed vlan 10,20,30,50,60,99-100
+ switchport mode trunk
+!
+interface FastEthernet0/2
+ switchport trunk native vlan 1000
+ switchport trunk allowed vlan 10,20,30,50,60,99-100
+ switchport mode trunk
+!
+interface FastEthernet0/3
+ switchport access vlan 50
+ switchport trunk native vlan 1000
+ switchport trunk allowed vlan 10,20,30,50,60,99-100
+ switchport mode access
+!
+interface FastEthernet0/4
+ switchport access vlan 60
+ switchport trunk native vlan 1000
+ switchport trunk allowed vlan 10,20,30,50,60,99-100
+ switchport mode access
+!
+interface FastEthernet0/5
+ switchport trunk native vlan 1000
+ switchport trunk allowed vlan 10,20,30,50,60,99-100
+ switchport mode trunk
+!
+interface FastEthernet0/6
+ switchport trunk native vlan 1000
+ switchport trunk allowed vlan 10,20,30,50,60,99-100
+ switchport mode trunk
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface GigabitEthernet0/1
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20,30,99
+ switchport mode trunk
+!
+interface GigabitEthernet0/2
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20,30,99
+ switchport mode trunk
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+banner motd ^C AUTHORIZED ACCESS ONLY! ^C
+!
+!
+!
+line con 0
+ password 7 0822455D0A16
+ login
+!
+line vty 0 4
+ password 7 0822455D0A16
+ login
+line vty 5 15
+ login
+!
+!
+!
+!
+end
