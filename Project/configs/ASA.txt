@@ -1,0 +1,59 @@
+
+ASA#show running-config
+ASA Version 8.4(2)
+!
+hostname ASA
+names
+!
+interface Ethernet0/0
+ switchport access vlan 2
+!
+interface Ethernet0/1
+!
+interface Ethernet0/2
+!
+interface Ethernet0/3
+!
+interface Ethernet0/4
+!
+interface Ethernet0/5
+!
+interface Ethernet0/6
+!
+interface Ethernet0/7
+!
+interface Vlan1
+ nameif inside
+ security-level 100
+ ip address 10.0.0.5 255.255.255.252
+!
+interface Vlan2
+ nameif outside
+ security-level 0
+ ip address 10.0.0.2 255.255.255.252
+!
+!
+route outside 0.0.0.0 0.0.0.0 10.0.0.1 1
+!
+access-list inside_out extended permit ip any any
+access-list outside_in extended permit icmp any any
+!
+!
+access-group inside_out in interface inside
+access-group outside_in in interface outside
+!
+!
+!
+!
+!
+telnet timeout 5
+ssh timeout 5
+!
+dhcpd auto_config outside
+!
+!
+dhcpd enable inside
+!
+!
+!
+!
